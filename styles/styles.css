@@ -230,25 +230,114 @@
 
 
 
-/* responsive styles */
+/* Mobile and Tablet Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
 
-    @media screen and (max-width:576px) {
-      .banner-content {
-        
-        flex-direction: column-reverse;
-        margin-right: 0px;
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-        .banner-heading{
-          font-size: 1.5rem;
-          padding: 0px;
-        }
-        .banner-left{
-          margin: 28px 0px 65px 16px;
+  #display-hide {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-        }
-        .banner-discription{
-          margin-top: 13px;
-        
-        }
-        
-    }
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .banner-heading {
+    font-size: 2.5rem;
+  }
+
+  .banner-left,
+  .banner-right {
+    width: 100%;
+  }
+
+  .banner-right img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
+  .plants-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .flower-lovers {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .flower-lover-pic img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .flower-lover-discrition {
+    max-width: 100%;
+  }
+
+  .newsletter {
+    padding: 100px 20px;
+    height: auto;
+  }
+
+  .input-box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    text-align: center;
+  }
+
+  .colume-4 {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+ .banner-content{
+  flex-direction: column-reverse;
+ }
+
+ .banner-left{
+  text-align: left;
+  margin-right: 14px;
+  margin-top: 28px;
+ }
+ 
+ .plants-card{
+  max-width: 171px;
+ }
+
+
+}
+  
