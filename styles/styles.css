@@ -45,6 +45,30 @@
   color:rgba(0, 0, 0, 0.5) ;
 }
 
+.btn-primary{
+  background-color: #E95A08;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 19px 80px;
+  width: 270px;
+  margin-top: 30px;
+  border: none;
+
+}
+
+.btn-secondary {
+  background-color: #E95A08;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 19px 53px;
+  width: 186px;
+  height: 50px;
+  border: none;
+
+}
+
 
 /* navbar styles  */
 
@@ -82,5 +106,149 @@
 .banner-discription{
   max-width: 570px;
 }
+.banner-content img{
+  width: 100%;
+}
+
+/* our plants styles */
+
+.plants-cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+}
+
+.plants-card{
+  align-items:center;
+  text-align: center;
+}
+.plant-name{
+  margin-top: 30px;
+}
+
+.plants-text{
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+ /* Flower and plnats lover styles */
 
 
+ .flower-lovers{
+  gap: 60px;
+  align-items: center;
+  margin-top:210px ;
+  margin-bottom:130px ;
+ }
+
+ .flower-lover-title{
+  font-size: 3.125rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+ }
+
+ .lover-attibutes{
+  margin-bottom: 5px;
+ }
+
+ .flower-lover-discrition{
+  max-width: 540px;
+ }
+
+ 
+ /* newsletter section styles */
+
+
+ .newsletter{
+  background-image: url(../Images/news-letter-bg.png);
+  width:100% ;
+  background-repeat: no-repeat;
+  height: 530px;
+  background-size: cover;
+  padding:200px 427px ;
+  text-align: center;
+  margin-bottom: 70px;
+
+ }
+
+ .newsletter-title{
+  font-size: 3.125rem;
+  font-weight: bold;
+  margin-bottom: 23px;
+ }
+
+ .input-box{
+  width: 644px;
+  height: 50px;
+  
+ }
+
+ form{
+  display: flex;
+ }
+
+
+ /* footer styles */
+
+ footer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 110px;
+  margin-bottom:50px ;
+  justify-content: center;
+  align-items: center;
+  
+
+ }
+
+ .colume-1{
+  max-width: 350px;
+ }
+
+ .footer-nav{
+  list-style: none;
+ }
+
+ .footer-link{
+  text-decoration: none;
+ }
+
+
+ .colume-4{
+  justify-content: space-around;
+  gap: 5px;
+ }
+
+ .footer-icon{
+  width: 36px;
+  height: 36px;
+ }
+
+
+
+
+
+/* responsive styles */
+
+    @media screen and (max-width:576px) {
+      .banner-content {
+        
+        flex-direction: column-reverse;
+        margin-right: 0px;
+
+        .banner-heading{
+          font-size: 1.5rem;
+          padding: 0px;
+        }
+        .banner-left{
+          margin: 28px 0px 65px 16px;
+
+        }
+        .banner-discription{
+          margin-top: 13px;
+        
+        }
+        
+    }
